@@ -1,0 +1,82 @@
+::ng-deep  .day {
+    fill: #eee;
+    stroke: #fff;
+    stroke-width: 3px;
+  }
+
+::ng-deep  .color0 { fill: #9be9a8 }
+::ng-deep  .color1 { fill: #40c463 }
+::ng-deep  .color2 { fill: #30a14e }
+::ng-deep  .color3 { fill: #216e39 }
+
+/*Not using bootstrap css to avoid conflicts hence set css to show tooltip*/
+::ng-deep .tooltip.bottom {
+  padding: 5px 0;
+  margin-top: 3px;
+}
+::ng-deep .tooltip.in {
+  filter: alpha(opacity=90);
+  opacity: .9;
+}
+::ng-deep .fade.in {
+  opacity: 1;
+}
+::ng-deep .tooltip {
+  position: absolute;
+  z-index: 1070;
+  display: block;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.42857143;
+  text-align: left;
+  text-align: start;
+  text-decoration: none;
+  text-shadow: none;
+  text-transform: none;
+  letter-spacing: normal;
+  word-break: normal;
+  word-spacing: normal;
+  word-wrap: normal;
+  white-space: normal;
+  filter: alpha(opacity=0);
+  opacity: 0;
+  line-break: auto;
+}
+::ng-deep .fade {
+  opacity: 0;
+  -webkit-transition: opacity .15s linear;
+  -o-transition: opacity .15s linear;
+  transition: opacity .15s linear;
+}
+
+::ng-deep :after, :before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+::ng-deep .tooltip.bottom .tooltip-arrow {
+  top: 0;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 0 5px 5px;
+  border-bottom-color: #000;
+}
+::ng-deep .tooltip-arrow {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+}
+
+::ng-deep .tooltip-inner {
+  max-width: 200px;
+  padding: 3px 8px;
+  color: #fff;
+  text-align: center;
+  background-color: #000;
+  border-radius: 4px;
+}
